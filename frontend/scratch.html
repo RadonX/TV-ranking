@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/css/foundation.css" rel="stylesheet" />
+    <!--<link href="assets/foundation-5.5.3/css/foundation.css" rel="stylesheet" />-->
+    <!--<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>-->
+</head>
+<style>
+    .movie {
+        background-color: #e67e22; }
+
+    .health {
+        background-color: #2ecc71; }
+
+    .pirate {
+        background-color: #2c3e50; }
+
+    .sass {
+        background-color: #e74c3c; }
+
+    .code {
+        background-color: #8e44ad; }
+
+    .button.ghost {
+        margin-bottom: 0;
+        background-color: #34495e;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 0.5rem 1.5rem;
+        transition: all 0.3 ease-out;
+        color: #fff; }
+    .button.ghost:hover {
+        background-color: #fff;
+        color: #34495e;
+        transition: 0.2 ease; }
+
+    .row.full {
+        max-width: 100%; }
+
+    .sidebar {
+        display: inline-block;
+        background-color: #34495e; }
+    .sidebar h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800; }
+    .sidebar h2 {
+        font-weight: 300;
+        color: #B0CADB; }
+
+    .middle-header {
+        text-align: center; }
+
+    @media only screen and (min-width: 64.063em) {
+        .sidebar {
+            position: fixed;
+            background-color: #34495e;
+            top: 0;
+            bottom: 0; }
+        .sidebar h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 800; }
+        .sidebar h2 {
+            font-weight: 300;
+            color: #B0CADB; }
+
+        .middle-header {
+            text-align: right;
+            position: relative;
+            top: 50%;
+            transform: translateY(85%); } }
+    .content img {
+        width: 400px; }
+    .content img.author {
+        float: right;
+        border-radius: 50%;
+        height: 48px;
+        width: 48px; }
+    .content h2 {
+        margin-top: 1.25rem;
+        font-weight: 800; }
+    .content h4 {
+        border-bottom: 1px solid #34495e;
+        text-transform: uppercase;
+        color: #aaa;
+        padding: 0.4em 0;
+        font-size: 80%;
+        font-weight: 500;
+        letter-spacing: 0.1em; }
+
+    .social-header i {
+        font-size: 3rem;
+        color: #fff;
+        margin: 10px 15px; }
+    .social-header i:hover {
+        transform: scale(1.5);
+        transition: .6s ease-in-out; }
+</style>
+<body>
+
+<div class="row full">
+    <div class="sidebar medium-12 large-3 columns">
+        <div class="middle-header">
+            <h1>I am a blog</h1>
+            <h2>Read Me <br>Or I'll Be Sad</h2>
+            <a href="#" class="button ghost">Donate</a>
+            <a href="#" class="button ghost">Contact</a>
+            <div class="social-header">
+                <a href="#"><i class="fi-social-facebook"></i></a>
+                <a href="#"><i class="fi-social-medium"></i></a>
+                <a href="#"><i class="fi-social-rdio"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content medium-12 large-9 columns">
+        <h4>Pinned Post</h4>
+
+        <article class="post">
+            <img alt="person" class="author" src="http://placeimg.com/46/46/people">
+            <h2>Learning jQuery In 10 Minutes</h2>
+            <p class="subheader">By <a href="#">Jarvis Hendrix</a> under <a href="#"><span class="label">JavaScript</span></a> <a href="#"><span class="alert label">jQuery</span></a></p>
+            <p>There's a lot more to learn about building web sites and applications with jQuery than can fit in API documentation. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eum necessitatibus non pariatur accusamus nobis iure maxime, doloribus impedit voluptas error provident laboriosam, quam ea neque autem architecto voluptatem nostrum.</p>
+            <a href="#" class="ghost button">Read it &rarrlp;</a>
+        </article>
+
+        <h4>Recent Posts</h4>
+
+        <article class="post">
+            <img alt="person" class="author" src="http://placeimg.com/46/46/people">
+            <h2>Reading Other Peoples Code</h2>
+            <a href="http://abstrusegoose.com/strips/you_down_wit_OPC-yeah_you_know_me.png" class="th"><img alt="funny but true comic" src="http://abstrusegoose.com/strips/you_down_wit_OPC-yeah_you_know_me.png"></a>
+            <p class="subheader">By <a href="#">Tyson Underdog</a> under <a href="#"><span class="code label">Code</span></a> <a href="#"><span class="sad-panda label">Sad Panda</span></a></p>
+            <p>So, why should you waste hours looking at other people's crappy code when you can be spending this time writing awesome code of your own?</p>
+            <a href="#" class="ghost button">Read it &rarrlp;</a>
+        </article>
+
+        <hr>
+
+        <article class="post">
+            <img alt="person" class="author" src="http://placeimg.com/46/46/people">
+            <h2>How Foundation Will Make You a Better Husband</h2>
+            <p class="subheader">By <a href="#">Archibald Bunker</a> under <a href="#"><span class="sass label">Sass</span></a> <a href="#"><span class="success label">Framework</span></a></p>
+            <p>Build beautiful sites with ZURB’s responsive Foundation Framework. Spend less time writing media queries, styling buttons, building a grid, and futzing around with browser issues. Foundation saves you time which means you can pay more attention to your wife...and kids. Enjoy it!</p>
+            <a href="#" class="ghost button">Read it &rarrlp;</a>
+        </article>
+
+        <hr>
+
+        <article class="post">
+            <img alt="person" class="author" src="http://placeimg.com/46/46/people">
+            <h2>Why Pulp Fiction is One of the Best Movies Ever Made</h2>
+            <p class="subheader">By <a href="#">Rory Davidson</a> under <a href="#"><span class="movie label">Movies</span></a></p>
+            <p>Outrageously violent, time-twisting, and in love with language, Pulp Fiction is widely considered the most influential movie of the 1990s. I wouldn't go so far as to call a dog filthy but they're definitely dirty. But, a dog's got personality. Personality goes a long way.</p>
+            <a href="#" class="ghost button">Read it &rarrlp;</a>
+        </article>
+
+        <hr>
+
+        <article class="post">
+            <img alt="person" class="author" src="http://placeimg.com/46/46/people">
+            <h2>Sitting Is the New Smoking | Ikea Has the Answer</h2>
+            <a href="http://justinjackson.ca/wp-content/uploads/2011/02/standing_02.jpg" class="th"><img alt="standing desk" src="http://justinjackson.ca/wp-content/uploads/2011/02/standing_02.jpg"></a>
+            <p class="subheader">By <a href="#">Tina Morose</a> under <a href="#"><span class="health label">Flightless Birds</span></a> <a href="#"><span class="pirate label">Peg Leg</span></a></p>
+            <p>Standing desks are not cheap. Or at least, the extremely handy motorized ones aren't. That's why everyone—including this desk-agnostic blogger—freaked out when IKEA announced that it would sell a <a href="#">sit/stand desk</a> powered by electricity for less than $500. Finally, a healthy desk option for the masses. Finally!</p>
+            <a href="#" class="ghost button">Read it &rarrlp;</a>
+        </article>
+
+    </div>
+</div>
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/foundation.js"></script>
+<script src="assets/js/docs.js"></script>
+<script>
+    $(function(){
+        $(document).foundation();
+    });
+</script>
+<script>
+    $(document).ready(function(){});
+</script>
+</body>
+</html>
