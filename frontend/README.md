@@ -1,6 +1,8 @@
 #### README
 
-1. use basic as the starter file.
+1. `basic.html`
+    starter file with newest version of foundation
+2. `index.html`
 
 
 #### Foundation
