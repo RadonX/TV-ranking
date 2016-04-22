@@ -15,7 +15,7 @@ module Imdb
       @id = imdb_id
       @url = "http://akas.imdb.com/title/tt#{imdb_id}/combined"
       @title = title.gsub(/"/, '').strip if title
-      puts id, title
+      # puts id, title
     end
 
     # Returns an array with cast members
