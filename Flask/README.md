@@ -1,1 +1,0 @@
-`TV.html` and `index.html` are static HTML files for previewing the Flask application. The required API for the application should be served by another server. `data-flask` is a simple application which only provides data for `ranking.html`.
