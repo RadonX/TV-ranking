@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TV Ranking </title>
+    <link href="static/css/lib/foundation.css" rel="stylesheet" />
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+    <link href="static/css/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div class="row full">
+
+    <!-- modal content -->
+    <div id="myModal" class="reveal" data-reveal aria-labelledby="login or sign up" aria-hidden="true" role="dialog">
+        <div class="row">
+            <div class="large-6 columns auth-plain">
+                <div class="signup-panel left-solid">
+                    <!-- <p class="welcome">Registered Users</p> -->
+                    <p></p>
+                    <form>
+                        <div class="row collapse">
+                            <div class="small-2  columns">
+                                <span class="prefix"><i class="fi-torso-female"></i></span>
+                            </div>
+                            <div class="small-10  columns">
+                                <input type="text" placeholder="username" id="username">
+                            </div>
+                        </div>
+                        <div class="row collapse">
+                            <div class="small-2 columns ">
+                                <span class="prefix"><i class="fi-lock"></i></span>
+                            </div>
+                            <div class="small-10 columns ">
+                                <input type="text" placeholder="password" id="password">
+                            </div>
+                        </div>
+                    </form>
+                    <a href="javascript:login();" class="button ">Log In </a>
+                    <a href="#" class="button ">Sign Up</a><br/>
+                </div>
+            </div>
+            <div class="large-6 columns auth-plain">
+                <div class="signup-panel newusers">
+                    <p class="welcome"> New User?</p>
+                    <p>By creating an account with us, you will be able to bookmark your favorite TV shows, view and get recommendations and more.</p><br>
+                    <!-- <a href="#" class="button ">Sign Up</a></br> -->
+                </div>
+            </div>
+        </div>
+        <a class="close-button" data-close aria-label="Close modal">
+            <!--<span aria-hidden="true">&times;</span>-->
+            &#215;
+        </a>
+    </div>
+
+
+    <div class="sidebar medium-12 large-3 columns">
+        <div class="profile" id="logout">
+            <img src="static/img/rating-pink-256.png" alt="" />
+            <h1 id="user"><a href="#">SocialTVRating</a></h1>
+            <a href="#" class="button ghost" data-open="myModal">SignUp</a>
+            <a href="#" class="button ghost" data-open="myModal">Login</a>
+        </div>
+
+        <div id="menu">
+            <ul>
+
+                <li class="current_page_item"><a href="/" accesskey="1" title="">Featured</a></li>
+                <li><a href="/ranking" accesskey="3" title="">Top TV shows</a></li>
+
+            </ul>
+        </div>
+
+        <form class="has-form" action="search">
+            <div class="row collapse">
+                <div class="large-8 small-9 columns">
+                    <input type="text" id="searchbox" name="genre" placeholder="Find By Genre" data-toggle-focus="form-callout" ></input>
+                </div>
+                <div class="large-4 small-3 columns">
+                    <input  type="submit" value="Search" class="button expand" ></input>
+                </div>
+            </div>
+            <div class="is-hidden" id="form-callout" data-toggler="is-hidden">
+                <span class="warning tiny button">Sci-Fi</span>
+                <span class="alert large button">Comedy</span>
+                <span class="secondary small button">Fantasy</span>
+            </div>
+        </form>
+
+        <div class="social-header">
+            <a href="#"><i class="fi-social-facebook"></i></a>
+            <a href="#"><i class="fi-social-medium"></i></a>
+            <a href="#"><i class="fi-social-rdio"></i></a>
+        </div>
+    </div>
+
+<div id="main" class="medium-12 large-9 columns">
+
+    <div id="banner">
+        <img src="static/img/GOT.jpg" alt="" class="image-full" />
+    </div>
+    <div class="title main-content">
+        <h2><a href="/tv?title=Game%20of%20Thrones"> Game of Thrones</a></h2>
+        <span class="byline">George R.R. Martin's best-selling book series "A Song of Ice and Fire" is brought to the screen as HBO sinks its considerable storytelling teeth into the medieval fantasy epic. </span>
+    </div>
+
+    <div id="featured">
+        <div class="title main-content">
+            <h2>Most Popular TV Shows</h2>
+            <span class="byline">Log in to rate your favorite titles. Leave feedback on Most Popular TV Shows </span>
+        </div>
+        <ul class="style1">
+        <li>
+            <p class="ranking"><a href="#"><b>1</b></a></p>
+            <h3><a href="/tv?title=The Walking Dead">The Walking Dead</a></h3>
+            <p>Rick Grimes is a former Sheriff&#39;s deputy who has been in a coma for several months after being shot while on duty. When he awakens he discovers that the world has been ravished by a zombie epidemic of apocalyptic proport ...</p>
+        </li>
+        <li>
+            <p class="ranking"><a href="#"><b>2</b></a></p>
+            <h3><a href="/tv?title=Game of Thrones">Game of Thrones</a></h3>
+            <p>Ned Stark, Lord of Winterfell, becomes the Hand of the King after the former Hand, Jon Arryn, has passed away. But before Ned goes to the capital, King&#39;s Landing, a letter arrives from his wife&#39;s sister Lysa, who was the ...</p>
+        </li>
+        <li>
+            <p class="ranking"><a href="#"><b>3</b></a></p>
+            <h3><a href="/tv?title=Breaking Bad">Breaking Bad</a></h3>
+            <p>When chemistry teacher Walter White is diagnosed with Stage III cancer and given only two years to live, he decides he has nothing to lose. He lives with his teenage son, who has cerebral palsy, and his wife, in New Mexi ...</p>
+        </li>
+        <li>
+            <p class="ranking"><a href="#"><b>4</b></a></p>
+            <h3><a href="/tv?title=How I Met Your Mother">How I Met Your Mother</a></h3>
+            <p>A father recounts to his children, through a series of flashbacks, the journey he and his four best friends took leading up to him meeting their mother. ...</p>
+        </li>
+        <li>
+            <p class="ranking"><a href="#"><b>5</b></a></p>
+            <h3><a href="/tv?title=The Big Bang Theory">The Big Bang Theory</a></h3>
+            <p>Leonard Hofstadter and Sheldon Cooper are both brilliant physicists working at Cal Tech in Pasadena, California. They are colleagues, best friends, and roommates, although in all capacities their relationship is always t ...</p>
+        </li>
+    </div>
+
+    <div class="row results">
+      <div class="large-12 columns ">
+          <div class="row">
+              <div class="large-9 columns">
+                  <p> Search Results for "Action": 27</p>
+              </div>
+              <div class=" large-3 columns ">
+                  <select name="sortOptions">
+                      <option value="sortby">Sort By</option>
+                      <option value="cats">Cats</option>
+                      <option value="title">Title</option>
+                      <option value="author">Author</option>
+                      <option value="mrecats">More Cats</option>
+                  </select>
+              </div>
+          </div>
+          <article class="website-example row wide">
+              <div class="large-6 columns">
+                  <div class="row">
+                      <div class="small-8 columns">
+                          <img src="http://placeimg.com/400/400/people" alt="Barclays Site Desktop Image">
+                      </div>
+                      <div class="small-4 columns">
+                          <img src="http://placeimg.com/46/46/people" alt="Barclays Site Mobile Image">
+                      </div>
+                  </div>
+              </div>
+              <div class="large-6 columns">
+                  <h3>Barclay's</h3>
+                  <h6>built with foundation</h6>
+                  <p>Many investment companies are moving towards responsive designs, but Barclay’s looks exceptionally well on smartphones, tablets, laptops and desktop computers. The site uses many smart techniques to get users where they need to go on a small device. They employ a multi-level off-canvas and in-section navigation to achieve a good user flow.</p>
+                  <a class="button" href="http://www.barclays.com">Take a Closer Look »</a>
+              </div>
+          </article>
+          <article class="website-example row wide">
+              <div class="large-6 columns">
+                  <div class="row">
+                      <div class="small-8 columns">
+                          <img src="http://zurb.com/responsive/system/upload/desktop_screenshots/images/000/000/790/regular/starwars.com_3Anews-wide.jpg?1416007082" alt="Star Wars Site Desktop Image">
+                      </div>
+                      <div class="small-4 columns">
+                          <img src="http://zurb.com/responsive/system/upload/mobile_screenshots/images/000/000/791/regular/starwars.com_3Anews-narrow.jpg?1416007084" alt="Star Wars Site Mobile">
+                      </div>
+                  </div>
+              </div>
+              <div class="large-6 columns">
+                  <h3>Star Wars News</h3>
+                  <h6>built with foundation</h6>
+                  <p>The Star Wars blog is built on a solid foundation of responsive design, satisfying fans craving news of the upcoming movie no matter what size device they use. On mobile a light sabre hamburger menu morphs and crosses when tapped. The off-canvas menu reveals the icon-bar that was visible on desktop.</p>
+                  <a class="button" href="http://starwars.com/news">Take a Closer Look »</a>
+              </div>
+          </article>
+
+          <a href="#" class="button right"> show more results &raquo;</a>
+      </div>
+  </div>
+
+</div>
+
+</div>
+
+<script src="static/js/lib/vendor.js"></script>
+<script src="static/js/lib/foundation.js"></script>
+<!--<script src="assets/js/docs.js"></script>-->
+<script>
+    $(function(){
+        $(document).foundation();
+    });
+</script>
+<script>
+    $(document).ready(function(){});
+
+function login(){
+    var password = $("#password").val() || "1234",
+        username = $("#username").val() || "guest";
+    $.post(
+        "http://finalproject-dev.us-west-2.elasticbeanstalk.com/login_user/",
+        { "password": password, "username": username },
+        function(data) {
+            console.log(data);
+        },
+        "jsonp"
+    );
+    location.href = "/";
+}
+
+function getusersession(){
+    $.get(
+        "http://finalproject-dev.us-west-2.elasticbeanstalk.com/get_username/",
+        function(data) {
+            var title = data.username;
+            if (title)
+                $("#user").text("a")
+        }
+    );
+}
+
+getusersession();
+
+</script>
+
+</body>
+</html>
